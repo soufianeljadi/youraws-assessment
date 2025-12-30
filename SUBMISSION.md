@@ -7,9 +7,10 @@
 - API: http://158.180.41.141/api/users
 
 ## Docker Hub Images
-- Backend: docker.io/soufianeljadi/youraws-backend:latest
-- Frontend: docker.io/soufianeljadi/youraws-frontend:latest
-- MySQL: docker.io/soufianeljadi/youraws-mysql:latest
+- Backend:  https://hub.docker.com/r/soufianeljadi/youraws-backend
+- Frontend: https://hub.docker.com/r/soufianeljadi/youraws-frontend
+- MySQL: https://hub.docker.com/r/soufianeljadi/youraws-mysql
+
 
 ## GitHub Repository
 - https://github.com/soufianeljadi/youraws-assessment
