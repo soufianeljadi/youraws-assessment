@@ -1,0 +1,90 @@
+youraws technical assessment:
+Scenario
+At youraws, we manage a diverse portfolio of projects built with various front-end, back-end,
+and cloud technologies. Your challenge is to design and deliver a fully functional application
+that includes:
+A front-end UI
+A back-end API
+Cloud deployment of both components using the cloud provider of your choice
+You are free to choose the tech stack you are most comfortable with, as long as the final
+solution is fully operational, deployable, and demonstrates good software engineering
+practices.
+Overview
+You are required to build a fully functional user-management application consisting of:
+A front-end UI
+A back-end CRUD API
+A MySQL database
+Containerized deployment (Docker)
+A cloud-hosted environment on a VPS
+You may choose any front-end, back-end, or cloud provider you prefer.
+
+️ Frontend Requirements
+Framework
+Use any modern frontend framework (React, Vue, Angular, Svelte, etc.).
+Application Structure
+This must be a Single Page Application (SPA) with the following pages:
+1. User List Page
+Displays a list of all users retrieved from your backend.
+Provides a form or modal to create a new user and save it to the backend.
+The list should update after creation.
+
+2. User Details Page
+Displays the data of a single user.
+Ability to update the user.
+Ability to delete the user.
+Once updated or deleted, the SPA should reflect the change.
+optional: bonus points if you use caching mechanisms to reduce the load of requests on the
+server.
+🧩 Backend Requirements
+Create a CRUD API with the following endpoints:
+POST /users — Create a new user
+PUT /users/{id} — Update a user
+GET /users/{id} — Get one user
+GET /users — Get all users
+DELETE /users/{id} — Delete a user
+Backend Notes
+Use any back-end framework you prefer (Node.js/Express, .NET, Spring Boot, Django,
+Flask, Go, etc.).
+API must communicate with a MySQL database.
+Follow good coding structure, validation, and error handling.
+optional: documenting the api endpoints with swagger or openapi
+
+️ Database Requirements
+Use MySQL as the main data store.
+Ensure data persistence with Docker volumes.
+Use a proper database schema (e.g., id, firstname, lastname, email, etc.).
+
+🐳 Docker & Containerization Requirements
+Your application must be fully containerized:
+Containers
+You must create a Docker container for each:
+
+Frontend
+Backend
+Database
+Requirements
+All containers must run inside the same Docker network.
+Only port 80 can be exposed externally.
+Database must use a persistent volume.
+Docker images must be built and pushed to Docker Hub.
+Deployment should pull the images directly from Docker Hub.
+
+☁️ Cloud (VPS) Requirements
+Deploy your application to a VPS on the cloud provider of your choice.
+Security Requirements
+Only allow inbound traffic on port 80.
+Use SSH key-pair authentication.
+Restrict SSH (port 22) so that only your own IP can access it.
+Firewall must block all unnecessary ports.
+Deployment
+Your VPS must:
+Pull your images from Docker Hub
+Run your docker-compose up -d (or equivalent)
+Serve the application via port 80
+
+what to submit:
+the url in which your application lives (ip address or a custom domain name).
+the url to the git repo with public access to for review.
+Docker Hub image URLs.
+clear documentation for the technology stack choice, and how to run the application and
+troubleshooting guide.
